@@ -1,5 +1,7 @@
 <template>
-  <search-form />
+  <div class="max-w-screen-md mx-auto container mt-3 p-3 justify-center">
+    <search-form />
+  </div>
 </template>
 
 <script lang="ts">

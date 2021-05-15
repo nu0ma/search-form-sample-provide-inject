@@ -1,8 +1,20 @@
 <template>
-  <div>
-    <label>Author：</label>
-    <input type="text" v-model="author" />
-  </div>
+  <label class="text-sm font-bold mb-2">作成者 </label>
+  <input
+    type="text"
+    class="
+      px-3
+      py-2
+      border
+      shadow
+      rounded
+      apperance-none
+      focus:outline-none
+      focus:shadow-outline
+      w-full
+    "
+    v-model="author"
+  />
 </template>
 
 <script lang="ts">

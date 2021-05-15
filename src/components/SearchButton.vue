@@ -1,6 +1,12 @@
 <template>
-  <div>
-    <button type="button" @click="handleClick()">Search</button>
+  <div class="flex flex-col px-20">
+    <button
+      type="button"
+      class="bg-blue-500 hover:bg-blue-700 py-2 font-bold text-white rounded"
+      @click="handleClick()"
+    >
+      Search
+    </button>
   </div>
 </template>
 

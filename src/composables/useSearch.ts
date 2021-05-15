@@ -13,6 +13,8 @@ export const useSearch = () => {
     author: "",
   });
 
+  const showResult = ref(false);
+
   const search = async () => {
     const params = {
       title: searchCondition.title,
@@ -20,16 +22,19 @@ export const useSearch = () => {
       author: searchCondition.author,
     };
 
+    // 表示用
     console.log(searchCondition);
+    showResult.value = true;
 
-    const res = await axios.get<string[]>("/posts", { params });
-    result.value = res.data;
+    // const res = await axios.get<string[]>("/posts", { params });
+    // result.value = res.data;
   };
 
   return {
     ...toRefs(searchCondition),
     result,
     search,
+    showResult,
   };
 };
 

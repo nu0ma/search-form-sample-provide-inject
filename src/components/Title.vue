@@ -1,8 +1,21 @@
 <template>
-  <div class="text-gray-200">
-    <label>Title：</label>
-    <input type="text" v-model="title" />
-  </div>
+  <label class="text-sm font-bold mb-2">タイトル</label>
+  <input
+    type="text"
+    class="
+      shadow
+      appearance-none
+      border
+      rounded
+      w-full
+      py-2
+      px-3
+      leading-tight
+      focus:outline-none
+      focus:shadow-outline
+    "
+    v-model="title"
+  />
 </template>
 
 <script lang="ts">
