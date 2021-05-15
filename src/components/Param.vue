@@ -1,6 +1,6 @@
 <template>
-  <div v-if="showResult">
-    {{ params }}
+  <div v-if="showResult" class="mt-14">
+    <code> {{ params }} </code>
   </div>
 </template>
 
@@ -16,9 +16,9 @@ export default defineComponent({
 
     const params = computed(
       () =>
-        `タイトル:${title.value}, Author:${
+        `title:${title.value}, author:${
           author.value
-        }, カテゴリ:${category.value.join(",")}`
+        }, category:${category.value.join(",")}`
     );
     return { params, showResult };
   },
