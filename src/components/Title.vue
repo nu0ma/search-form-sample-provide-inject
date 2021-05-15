@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-gray-200">
     <label>Title：</label>
     <input type="text" v-model="title" />
   </div>
